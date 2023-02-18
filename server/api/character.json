@@ -1,0 +1,41 @@
+{
+    "name": "Indigo",
+    "level": 2,
+    "charClass": "Barbarian",
+    "wellness": {
+        "curHP": 28,
+        "maxHP": 43,
+        "tmpHP": 8,
+        "armor": 12,
+        "death": {
+            "pass": 0,
+            "fail": 0
+        }
+    },
+    "abilityScores": {
+        "strength": {
+            "score": 19,
+            "proficient": 0
+        },
+        "dexterity": {
+            "score": 8,
+            "proficient": 1
+        },
+        "constitution": {
+            "score": 10,
+            "proficient": 0
+        },
+        "intelligence": {
+            "score": 15,
+            "proficient": 2
+        },
+        "wisdom": {
+            "score": 10,
+            "proficient": 0
+        },
+        "charisma": {
+            "score": 100,
+            "proficient": 0
+        }
+    }
+}

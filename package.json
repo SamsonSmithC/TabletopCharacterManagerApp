@@ -1,0 +1,45 @@
+{
+    "name": "RPG Character Building App (Demo)",
+    "version": "0.0.1",
+    "description": "A bare-bones demonstration of a RPG character building web-app",
+    "main": "client/app.tsx",
+    "scripts": {
+        "client:": "esbuild client/app.tsx --bundle --minify --target=es6 --outfile=public/bundle.js",
+        "devClient": "esbuild client/app.tsx --bundle --watch --sourcemap --target=es6 --outfile=public/bundle.js",
+        "devClientServe": "esbuild client/app.tsx --bundle --sourcemap --servedir=public --target=es6 --outfile=public/bundle.js",
+        "server": "ts-node server/main.js",
+        "devServer": "nodemon --watch server server/main.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "type": "module",
+    "private": true,
+    "author": "Sam Smith",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/node": "^17.0.31",
+        "@types/react-dom": "^18.0.3",
+        "axios": "^0.26.0",
+        "esbuild": "^0.14.25",
+        "eslint": "^8.10.0",
+        "eslint-config-standard": "^17.0.0-1",
+        "eslint-plugin-import": "^2.25.4",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-promise": "^6.0.0",
+        "eslint-plugin-react": "^7.29.4",
+        "eslint-plugin-react-hooks": "^4.3.0",
+        "nodemon": "^2.0.15",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "tslib": "^2.4.0",
+        "typescript": "^4.6.4"
+    },
+    "dependencies": {
+        "@emotion/react": "^11.9.0",
+        "@emotion/styled": "^11.8.1",
+        "@k-foss/ts-esnode": "^2.0.2",
+        "@mui/material": "^5.6.1",
+        "body-parser": "^1.20.0",
+        "express": "^4.17.3",
+        "ts-node": "^10.7.0"
+    }
+}
